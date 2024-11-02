@@ -1,10 +1,10 @@
-=== Blizhost CloudCache Purge – Speed, Security, and Efficiency ===
+=== Blizhost CloudCache Purge – Speed, Security, and Optimization ===
 Contributors: blizhost
 Tags: cache, performance, security, nginx, redis
 Requires at least: 4.4
 Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 4.0.6
+Stable tag: 5.0.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -101,6 +101,20 @@ Absolutely! <strong>CloudCache</strong> is fully compatible with proxy or CDN se
 You can request the removal of <strong>CloudCache</strong> by opening a support ticket in the client panel. However, keep in mind that <strong>CloudCache</strong> significantly boosts your site's speed and traffic-handling capacity, making it up to 300x faster.
 
 == Changelog ==
+
+= 5.0.0 =
+* Enhanced security by sanitizing inputs and verifying nonces in AJAX requests and special POST handlers
+* Added support for AJAX-based cache purging to improve user experience when clearing the cache
+* Improved CDN image URL replacement with more robust methods, ensuring only site-hosted images are processed
+* Implemented validation for image URLs before replacing them to prevent external images from being incorrectly modified
+* Added custom HTTP headers to indicate the plugin's status and enhance communication with Blizhost services
+* Refactored code to use server hostname and PHP SAPI, improving compatibility and security
+* Updated the admin bar menu with status indicators for CloudCache and CDN services, providing visual feedback to users
+* Changed the way the plugin retrieves and uses the hash and CDN domain, storing them securely using WordPress transients and options
+* Added methods to generate and store the hash and CDN domain when necessary, enhancing security
+* Enhanced compatibility with various caching events and hooks to ensure comprehensive cache purging
+* Improved handling of SSL detection and protocol-relative URLs for better performance and reliability
+* Updated plugin metadata, including plugin name and description, to reflect new features and improvements
 
 = 4.0.6 =
 * Improvement in sitemap cleaning

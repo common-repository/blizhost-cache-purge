@@ -19,7 +19,7 @@
   text-transform: none;
   line-height: 1;
 
-  /* Better Font Rendering =========== */
+  /* Better Font Rendering */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -88,3 +88,7 @@
   color: rgb(37, 39, 43);
 }
 
+/* Other styles not related to the logo */
+.bliz-purge-all-cache {
+  margin-bottom: 6px !important;
+}
